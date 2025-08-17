@@ -27,34 +27,50 @@ Performance highlights:
 
 ---
 
+## 🗂 Repository Structure  
+
+```
+bin-er-hdc/
+│── example.py           # End-to-end error resilience simulation
+│── LNS_removal.py       # Offline criticality analysis (LNS-based pruning)
+│── baselines/           # Baseline error resilience (ECC, AbsSum, etc.)
+│── datasets/            # Preprocessed data (MNIST, ISOLET, UCIHAR, etc.)
+│── results/             # Output results (.npy, figures)
+│── utils/               # Helper functions (encoding, clustering, metrics)
+│── ATSITC-ASIA_2025_paper_110.pdf   # Paper with full methodology
+│── README.md
+```
+
+---
+
 ## 🚀 Getting Started  
 
 ### 1. Installation  
-\`\`\`bash
+```bash
 git clone https://github.com/mmejri3/bin-er-hdc.git
 cd bin-er-hdc
 pip install -r requirements.txt
-\`\`\`
+```
 
 If no requirements file is present:  
-\`\`\`bash
+```bash
 pip install numpy torch matplotlib tqdm scikit-learn fxpmath onlinehd
-\`\`\`
+```
 
 ---
 
 ### 2. Offline Stage: LNS-based Criticality Analysis  
 
 Run **LNS_removal.py** to prune non-critical dimensions and generate:  
-- \`model_<dataset>/model.pt\` → Original HDC model.  
-- \`model_<dataset>/pruned_model.pt\` → LNS-pruned model.  
-- \`model_<dataset>/kept_columns.pt\` → Critical columns indices.  
+- `model_<dataset>/model.pt` → Original HDC model.  
+- `model_<dataset>/pruned_model.pt` → LNS-pruned model.  
+- `model_<dataset>/kept_columns.pt` → Critical columns indices.  
 
-\`\`\`bash
+```bash
 python LNS_removal.py
-\`\`\`
+```
 
-This will iterate over all datasets (\`ucihar\`, \`isolet\`, \`gtsrb\`, \`fashion_mnist\`, \`mnist\`).  
+This will iterate over all datasets (`ucihar`, `isolet`, `gtsrb`, `fashion_mnist`, `mnist`).  
 
 ---
 
@@ -63,21 +79,21 @@ This will iterate over all datasets (\`ucihar\`, \`isolet\`, \`gtsrb\`, \`fashio
 Run **example.py** to simulate error injection + correction.  
 
 #### Usage  
-\`\`\`bash
+```bash
 python example.py <index>
-\`\`\`
+```
 
-where \`<index>\` selects dataset:  
-- \`0\` → UCIHAR  
-- \`1\` → GTSRB  
-- \`2\` → ISOLET  
-- \`3\` → Fashion-MNIST  
-- \`4\` → MNIST  
+where `<index>` selects dataset:  
+- `0` → UCIHAR  
+- `1` → GTSRB  
+- `2` → ISOLET  
+- `3` → Fashion-MNIST  
+- `4` → MNIST  
 
 Example:  
-\`\`\`bash
+```bash
 python example.py 4
-\`\`\`
+```
 
 #### What it does:  
 - Loads pre-trained and LNS-pruned models.  
@@ -87,42 +103,33 @@ python example.py 4
   - **ECC baseline (ETS)**  
   - **Our method (custom cosine)**  
   - **Our ablation (regular cosine)**  
-- Saves results as \`.npy\` arrays in \`results/\`.  
+- Saves results as `.npy` arrays in `results/`.  
 
 ---
 
 ## 📊 Results  
 
-- \`LNS_removal.py\` → Provides pruned critical dimensions, improving accuracy vs. Random/AbsSum pruning.  
-- \`example.py\` → Saves accuracy vs. error-rate curves:  
-
-\`\`\`
-results/
-│── faulty_faulty_mnist.npy
-│── faulty_OUR_mnist.npy
-│── faulty_OUR-Ablation_mnist.npy
-│── faulty_ETS_mnist.npy
-\`\`\`
-
-You can then plot **accuracy vs error rate** to reproduce the paper’s figures.  
+- `LNS_removal.py` → Provides pruned critical dimensions, improving accuracy vs. Random/AbsSum pruning.  
+- `example.py` → Simulates robustness under fault injection, demonstrating superiority of our proposed method.  
 
 ---
 
-## 📝 Citation  
+## 📜 Citation  
 
-If you use this code in your research, please cite:  
+If you use this work, please cite our paper:  
 
-\`\`\`bibtex
+```
 @inproceedings{bin-er-hdc-2025,
-  title     = {Error Resilience in Hyperdimensional Computing via Dimension Criticality and Cross-Clustering},
-  author    = {Mejri, Mohamed and ...},
-  booktitle = {Proceedings of the IEEE ATSITC Asia},
-  year      = {2025}
+  title={Error Resilience in Hyperdimensional Computing via Dimension Criticality and Cross-Clustering},
+  booktitle={Proceedings of ATSITC-ASIA 2025},
+  year={2025},
+  author={Your Names Here}
 }
-\`\`\`
+```
 
 ---
 
-## 📌 License  
-This project is released under the MIT License.  
-See [LICENSE](LICENSE) for details.  
+## 🧑‍💻 Authors  
+- Mohamed Mejri  
+- Collaborators (ATSITC-ASIA 2025)  
+```
