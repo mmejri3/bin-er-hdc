@@ -126,10 +126,3 @@ If you use this work, please cite our paper:
   author={Your Names Here}
 }
 ```
-
----
-```
-## 🧑‍💻 Authors  
-- Mohamed Mejri  
-- Abhijit Chatterjee
-```
