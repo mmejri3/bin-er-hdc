@@ -131,5 +131,5 @@ If you use this work, please cite our paper:
 
 ## 🧑‍💻 Authors  
 - Mohamed Mejri  
-- Collaborators (ATSITC-ASIA 2025)  
+- Abhijit Chatterjee
 ```
