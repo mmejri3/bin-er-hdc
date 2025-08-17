@@ -121,8 +121,8 @@ If you use this work, please cite our paper:
 ```
 @inproceedings{bin-er-hdc-2025,
   title={Error Resilience in Hyperdimensional Computing via Dimension Criticality and Cross-Clustering},
-  booktitle={Proceedings of ATSITC-ASIA 2025},
+  booktitle={Proceedings of IEEE Asian Test Symposium (ATS) 2025},
   year={2025},
-  author={Your Names Here}
+  author={Mohamed Mejri, Abhijit Chatterjee}
 }
 ```
