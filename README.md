@@ -27,22 +27,6 @@ Performance highlights:
 
 ---
 
-## 🗂 Repository Structure  
-
-\`\`\`
-bin-er-hdc/
-│── example.py           # End-to-end error resilience simulation
-│── LNS_removal.py       # Offline criticality analysis (LNS-based pruning)
-│── baselines/           # Baseline error resilience (ECC, AbsSum, etc.)
-│── datasets/            # Preprocessed data (MNIST, ISOLET, UCIHAR, etc.)
-│── results/             # Output results (.npy, figures)
-│── utils/               # Helper functions (encoding, clustering, metrics)
-│── ATSITC-ASIA_2025_paper_110.pdf   # Paper with full methodology
-│── README.md
-\`\`\`
-
----
-
 ## 🚀 Getting Started  
 
 ### 1. Installation  
