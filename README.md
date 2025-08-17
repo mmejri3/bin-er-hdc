@@ -128,7 +128,7 @@ If you use this work, please cite our paper:
 ```
 
 ---
-
+```
 ## 🧑‍💻 Authors  
 - Mohamed Mejri  
 - Abhijit Chatterjee
