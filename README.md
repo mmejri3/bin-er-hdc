@@ -1,5 +1,5 @@
 # bin-er-hdc  
-**Error Resilience in Hyperdimensional Computing via Dimension Criticality and Cross-Clustering**  
+**Efficient Multiple Error Correction in Binary HDC Systems Using Majority-Encoded Hypervector Matrices**  
 
 [![Paper](https://img.shields.io/badge/paper-ATSITC%202025-blue)](./ATSITC-ASIA_2025_paper_110.pdf)  
 
@@ -119,10 +119,10 @@ python example.py 4
 If you use this work, please cite our paper:  
 
 ```
-@inproceedings{bin-er-hdc-2025,
-  title={Error Resilience in Hyperdimensional Computing via Dimension Criticality and Cross-Clustering},
-  booktitle={Proceedings of IEEE Asian Test Symposium (ATS) 2025},
-  year={2025},
+@inproceedings{bin-er-hdc-2026,
+  title={Efficient Multiple Error Correction in Binary HDC Systems Using Majority-Encoded Hypervector Matrices},
+  booktitle={The 32nd IEEE International Symposium on On-Line Testing and Robust System Design},
+  year={2026},
   author={Mohamed Mejri, Abhijit Chatterjee}
 }
 ```
